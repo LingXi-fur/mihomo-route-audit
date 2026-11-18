@@ -1,0 +1,17 @@
+/*
+!/.gitignore
+!/README.md
+!/CHANGELOG.md
+!/mihomo_route_audit.py
+!/examples/
+/examples/*
+!/examples/policy.example.json
+!/examples/snapshot.example.json
+!/tests/
+/tests/*
+!/tests/test_audit.py
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/test.yml

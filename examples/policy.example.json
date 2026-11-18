@@ -1,0 +1,9 @@
+{
+  "group": "Fixed route",
+  "node": "Example proxy",
+  "tun": false,
+  "rules": [
+    {"type": "DOMAIN-SUFFIX", "payload": "example.invalid"},
+    {"type": "PROCESS-PATH-REGEX", "payload": "^/opt/example/bin/desktop$"}
+  ]
+}

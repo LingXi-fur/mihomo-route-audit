@@ -1,0 +1,12 @@
+{
+  "configs": {"mode": "rule", "tun": {"enable": false}, "find-process-mode": "strict"},
+  "group": {"name": "Fixed route", "now": "Example proxy", "all": ["Example proxy"]},
+  "node": {"name": "Example proxy", "type": "Shadowsocks", "dialer-proxy": ""},
+  "rules": {
+    "rules": [
+      {"type": "DomainSuffix", "payload": "example.invalid", "proxy": "Fixed route", "extra": {"disabled": false}},
+      {"type": "ProcessPathRegex", "payload": "^/opt/example/bin/desktop$", "proxy": "Fixed route", "extra": {"disabled": false}},
+      {"type": "Match", "payload": "", "proxy": "DIRECT", "extra": {"disabled": false}}
+    ]
+  }
+}
